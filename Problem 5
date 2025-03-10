@@ -1,0 +1,13 @@
+#Problem5.py
+#Project Euler problem 5
+
+from NumberTests import summation_of_primes
+
+def main():
+    limit = 2000000
+    prime_numbers = summation_of_primes(limit)
+    total_sum = sum(prime_numbers)
+    print(total_sum)
+  
+if __name__ == '__main__':
+  main()

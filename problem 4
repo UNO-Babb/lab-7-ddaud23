@@ -1,0 +1,20 @@
+#Problem4.py
+#Project Euler problem 4
+
+from NumberTests import ispalindrome
+
+
+def main():
+    largest_palindrome = 0
+    for i in range(999, 99, -1):
+       for j in range(i, 99, -1):
+          product = i * j
+          if ispalindrome(product):
+             if product > largest_palindrome:
+                largest_palindrome = product
+    print(f"The largest palindrome made from the product of two 3-digit numbers is: {largest_palindrome}")            
+    
+
+
+if __name__ == '__main__':
+  main()
